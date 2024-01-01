@@ -54,4 +54,13 @@ public class OrderState
 
         ShowingConfigureDialog = false;
     }
+
+    /// <summary>
+    /// ピザをカートから削除する
+    /// </summary>
+    /// <param name="pizza">ピザ</param>
+    public void RemoveConfiguredPizza(Pizza pizza)
+    {
+        Order.Pizzas.Remove(pizza);
+    }
 }
